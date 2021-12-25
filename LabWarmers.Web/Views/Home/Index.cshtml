@@ -1,0 +1,64 @@
+﻿@model LabWarmers.Web.Controllers.HomeController.ResultDto
+@{
+    ViewData["Title"] = "Главная страница";
+}
+
+@if (!Model.AvailableCharts.Any())
+{
+    <p>Нет графиков. Запустите хоть какой-нибудь датчик чтобы он работал...</p>
+}
+else
+{
+    <p>Выбран датчик: @Model.ChartName</p>
+    <div style="display: flex; flex-direction: row;">
+    @foreach (var sensor in Model.AvailableCharts)
+    {
+        <form asp-action="Index" asp-route-id="@sensor">
+            <button class="btn btn-outline-success">@sensor</button>
+        </form>   
+    }
+    </div>
+}
+
+<p>Последнее время обновления: @Model.LastUpdateOn</p>
+
+<div id="chartContainer"></div>
+
+@if (Model.ChartValues.Any())
+{
+<script type="text/javascript">
+
+        $(function() {
+            var chart = new CanvasJS.Chart("chartContainer",
+                {
+                    theme: "light2",
+                    zoomEnabled: true,
+                    animationEnabled: true,
+                    title: {
+                        text: "График"
+                    },
+                    subtitles: [
+                        {
+                            text: "Попробуйте приблизить или уменьшить"
+                        }
+                    ],
+                    data: [
+                        {
+                            type: "line",
+
+                            dataPoints: [
+
+                                @foreach (var mdl in Model.ChartValues)
+                                {
+                                    <text>
+                                        { x: new Date(@mdl.X.Year, @mdl.X.Month, @mdl.X.Day, @mdl.X.Hour, @mdl.X.Minute, @mdl.X.Second), y:@mdl.Y },
+                                    </text>
+                                }
+                            ]
+                        }
+                    ]
+                });
+            chart.render();
+        });
+</script>
+}
