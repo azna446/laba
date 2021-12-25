@@ -1,0 +1,11 @@
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\bin\Debug\net5.0\LabWarmers.Common.deps.json
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\bin\Debug\net5.0\LabWarmers.Common.dll
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\bin\Debug\net5.0\ref\LabWarmers.Common.dll
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\bin\Debug\net5.0\LabWarmers.Common.pdb
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\obj\Debug\net5.0\LabWarmers.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\obj\Debug\net5.0\LabWarmers.Common.AssemblyInfoInputs.cache
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\obj\Debug\net5.0\LabWarmers.Common.AssemblyInfo.cs
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\obj\Debug\net5.0\LabWarmers.Common.csproj.CoreCompileInputs.cache
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\obj\Debug\net5.0\LabWarmers.Common.dll
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\obj\Debug\net5.0\ref\LabWarmers.Common.dll
+C:\Users\SaberMK\source\repos\LabWarmers\LabWarmers.Common\obj\Debug\net5.0\LabWarmers.Common.pdb
